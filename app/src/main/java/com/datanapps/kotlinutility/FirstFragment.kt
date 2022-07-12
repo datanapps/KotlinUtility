@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.datanapps.kotlin_utility.utils.Log
 import com.datanapps.kotlinutility.databinding.FragmentFirstBinding
 
 /**
@@ -35,6 +36,8 @@ class FirstFragment : Fragment() {
         binding.buttonFirst.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
+
+        Log.d("this is test message")
     }
 
     override fun onDestroyView() {
