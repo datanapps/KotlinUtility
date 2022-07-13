@@ -1,4 +1,5 @@
 # kotlinutility
+One line add in your project and avoid your boiler code and use tested method and speed up your work.
 
 #### Step 1. Add the JitPack repository to your build file
 Add it in your root build.gradle at the end of repositories:
@@ -18,15 +19,20 @@ Version : v1.0.0
 	}
 
 
-#### Extensions classes
+#### Benifits :
+
 1. Log
 
 2. Context
 
+---------------------------------------------
 
-# Have a GREAT day.
+#### Have a GREAT day.
 
-#### If you think this library is useful, please press the star button at the top.
+---------------------------------------------
+#### Support us.
+
+If you think this library is useful, please press the star button at the top.
  
  <img src="https://datanapps.com/public/dnarestapi/githubstar.png" height="100" width="200">
 
@@ -38,7 +44,8 @@ Version : v1.0.0
  
  [![See](https://datanapps.com/public/dnarestapi/buy/buy_coffee2.png)](https://www.paypal.me/datanappspaynow)
 
-  ### License
+  
+  #### License
 
 Copyright [2022] [datanapps]
 
