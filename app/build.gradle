@@ -50,5 +50,6 @@ dependencies {
 
 
     // our library
-    implementation project(':kotlin_utility')
+    //implementation project(':kotlin_utility')
+    implementation 'com.github.datanapps:kotlinutility:v1.0.0'
 }

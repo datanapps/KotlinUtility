@@ -18,7 +18,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -47,8 +47,7 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-
-                groupId = 'com.datanapps'
+                groupId = 'com.github.datanapps'
                 artifactId = 'kotlinutility'
                 version = '1.0.0'
             }
