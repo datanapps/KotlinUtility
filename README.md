@@ -14,10 +14,10 @@ Add it in your root build.gradle at the end of repositories:
 	}
   
 #### Step 2. Add the dependency
-Version : v1.0.3
+version : v1.0.5
 
 	dependencies {
-	        implementation 'com.github.datanapps:kotlinutility:v1.0.3'
+	        implementation 'com.github.datanapps:kotlinutility:$version'
 	}
 
 
