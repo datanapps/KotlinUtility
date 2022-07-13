@@ -1,19 +1,15 @@
 package com.datanapps.kotlin_utility.utils
 
 import com.datanapps.kotlin_utility.BuildConfig
+import com.datanapps.kotlin_utility.TAG
 
 /*
 * Created by Yogendra on 12/7/2022
 * The purpose of this class to print log
 */
-object Log {
-
-/*
-     * This included because, sonar raise create bug each class should have constructor
-     * */
 
 
-    private val TAG = "datanapps"
+object Logger {
 
 /*
 * Debug
@@ -45,8 +41,9 @@ object Log {
     }
 
     /*
-* ERROR
-* */
+    * ERROR
+    * */
+
     fun e(tag: String, msg: String) {
         if (BuildConfig.DEBUG) {
             android.util.Log.e(tag, validateString(msg))
@@ -71,9 +68,10 @@ object Log {
         }
     }
 
-/*
-* INFO
-* */
+    /*
+    * INFO
+    *
+    * */
 
     fun i(tag: String, msg: String) {
         if (BuildConfig.DEBUG) {
@@ -128,8 +126,11 @@ object Log {
         }
     }
 
+    /*
+    * WARNING
+    *
+    * */
 
-// =========== WARNING ===========
 
     fun w(tag: String, msg: String) {
         if (BuildConfig.DEBUG) {
@@ -156,8 +157,10 @@ object Log {
     }
 
 
-    private fun validateString(msg: String?): String {
-        return msg ?: "null"
+    private fun validateString(msg: String?) = when {
+        msg.isNullOrBlank() -> "NullOrBlank"
+        msg.isNullOrEmpty() -> "NullOrEmpty"
+        else -> msg
     }
 
 }
