@@ -14,7 +14,7 @@ Add it in your root build.gradle at the end of repositories:
 	}
   
 #### Step 2. Add the dependency
-version : v1.0.5
+version : v1.0.6
 
 	dependencies {
 	        implementation 'com.github.datanapps:kotlinutility:$version'
@@ -24,8 +24,13 @@ version : v1.0.5
 #### Benifits :
 
 1. Log
-
 2. Context
+3. dialogs
+4. Strings
+5. Utils
+6. Views
+7. WebViews
+and many more..
 
 ---------------------------------------------
 
